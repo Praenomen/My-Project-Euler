@@ -1,0 +1,13 @@
+import math
+done = False
+factors = [2,3,4,5,7,8,9,11,13,16,17,19]
+done = False
+for i in range(1,1000000000):
+    for j in factors:
+        if(math.ceil(i/j) * j ==  i and done == False):
+            print("Fun")
+            if (j == 19):
+                print(i)
+        else:
+            done = True
+print("Done") 
