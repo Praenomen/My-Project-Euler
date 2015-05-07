@@ -1,5 +1,5 @@
 import math
-big = 6857
+big = 600851475143
 for i in range (3, 150000000000):
     factor = big/i
     if (math.floor(factor) * i == big and math.ceil(factor) * i == big):
