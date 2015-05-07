@@ -1,11 +1,14 @@
 import math
 done = False
-factors = [2,3,4,5,7,8,9,11,13,16,17,19]
-done = False
-for i in range(1,1000000000):
+factors = [17,16,13,11,9,8,7,5,4,3,2]
+nineteens = []
+for x in range(1,47,368,422):
+    nineteens.append(19*x)
+print("Done the First")
+for i in nineteens:
+    done = False
     for j in factors:
         if(math.ceil(i/j) * j ==  i and done == False):
-            print("Fun")
             if (j == 19):
                 print(i)
         else:
