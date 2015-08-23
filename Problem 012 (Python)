@@ -1,7 +1,7 @@
-//credit to jasonbhill for most of this code, placing this 
-//here because my code did not work for reasons unbeknownst to me
+#credit to jasonbhill for most of this code, placing this 
+#here because my code did not work for reasons unbeknownst to me
 def num_divisors(n):
-    // if n is divisible by 2
+    # if n is divisible by 2
     if (n % 2 == 0):
         n = n/2
     divisors = 1
@@ -10,7 +10,7 @@ def num_divisors(n):
         count += 1
         n = n/2
     divisors = divisors * (count + 1)
-    //calculating any odd divisors
+    #calculating any odd divisors
     p = 3
     while (n != 1):
         count = 0
