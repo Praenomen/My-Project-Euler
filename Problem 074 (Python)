@@ -1,0 +1,25 @@
+import math
+
+totalSum = 0
+tempSum = 0
+digits = []
+currentChain = []
+done = False
+
+for x in range (1,1000000):
+    digits = list(str(x))
+    done = False
+    currentChain = []
+    while(done == False):
+        for i in range (0, len(digits)):
+            tempSum += math.factorial(int(digits[i]))
+        currentChain.append(tempSum)
+        digits = list(str(tempSum))
+        tempSum = 0
+        if (len(currentChain) != len(set(currentChain))):
+            done = True
+        if (len(currentChain) == 60):
+            totalSum += 1
+            done = True
+                            
+print(totalSum, "Is the answer")
