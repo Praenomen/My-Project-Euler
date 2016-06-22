@@ -42,9 +42,9 @@ int main()
     std::cout << sum;
     
     // Stops prompt from closing when "done"
-	std::cin.clear();               // reset any error flags
-	std::cin.ignore(32767, '\n');   // ignore any characters in the input buffer until we find an enter character
-	std::cin.get();                 // get one more char from the user
+    std::cin.clear();               // reset any error flags
+    std::cin.ignore(32767, '\n');   // ignore any characters in the input buffer until we find an enter character
+    std::cin.get();                 // get one more char from the user
 
     return 0;
 }
